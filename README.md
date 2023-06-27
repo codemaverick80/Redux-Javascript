@@ -129,3 +129,11 @@ if our application has to update the state then it has to emit or dispatch an ac
 **Reducer**
 
 Once an action has been dispatched, the reducer handle that action and update the current state.
+
+### Redux Middleware
+
+- Middleware is the suggested way to extend Redux with custom functionality.
+- Provides a third-party extension point between dispatching an action, and the moment it reaches the reducer.
+- Use middleware for logging, crash reporting, performing asynchronous tasks etc.
+
+NPM package: `redux-logger`
