@@ -42,6 +42,10 @@ node index
 node ReducerComplexObject
 ```
 
+#### What is Redux?
+
+Redux is a pattern and library for managing and updating application state, using events called "actions".
+
 #### Three Core Concepts in Redux
 
 | Cake Shop Scenario | Redux   | Purpose                             |
@@ -139,3 +143,33 @@ Once an action has been dispatched, the reducer handle that action and update th
 NPM package: `redux-logger`
 
 # ReactToolkit with JavaScript
+
+### Redux concerns
+
+    - Redux requires too much boilerplate code:
+    	- Action
+    	- Action Object
+    	- Action Creator
+    	- Switch statement in a reducer
+    - A lot of other packages have to be installed to work with Redux
+    	- Redux-thunk
+    	- Immer
+    	- Redux-devtools
+
+### Redux Toolkit
+
+### React Redux Toolkit
+
+```bash
+npm create vite@latest react-reduxtoolkit
+
+
+# select react
+# select typescript
+
+cd react-reduxtoolkit
+
+npm install
+
+npm install axios @reduxjs/toolkit
+```

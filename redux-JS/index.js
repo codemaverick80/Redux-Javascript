@@ -4,16 +4,24 @@ const bindActionCreators = redux.bindActionCreators;
 
 const CAKE_ORDERED = "CAKE_ORDERED";
 const CAKE_RESTOCKED = "CAKE_RESTOCKED";
-
-// State : it is an object which contains initial state
+/*
+============ State ============
+   State : it is an object which contains initial state.
+   Define an initial state value for the app
+*/
 const initialState = {
   numberOfCakes: 10,
 };
 
-//========== Action and Action Creator
-// Action creator : an action creator simply creates an action.
-// An action creator is a function that return an action
+/* 
+============ Action and Action Creator ============
+Action object always have type field, which is a string you provide that act as a unique name for the action.
 
+Action creator : an action creator simply creates an action.
+An action creator is a function that return an action
+
+
+*/
 /*
   function actionCreator(){
     return {
@@ -39,8 +47,10 @@ function restockCake(qty = 1) {
   };
 }
 
-//============ Reducers
 /*
+============ Reducers ============
+  Reducer is a function. The Reducer receives two arguments, the current state and an Action object describing what happened. When the Redux app starts up, we don't have any state, so we provide the initialState as the default value fot the reducer.
+
   Reducer specify how the app's state changes in response to actions sent to the store.
   Reducer is the function that accepts state and action as arguments and returns the next state of the application.
 
@@ -48,7 +58,11 @@ function restockCake(qty = 1) {
 
 */
 
+//create  a "reduce" function that determines what the new state
+// should be when something appends in the app
 const reducer = (state = initialState, action) => {
+  // Reducers usually look at the type of action that happened
+  // to decide how to update the state
   switch (action.type) {
     case CAKE_ORDERED:
       return {
