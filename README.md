@@ -137,3 +137,5 @@ Once an action has been dispatched, the reducer handle that action and update th
 - Use middleware for logging, crash reporting, performing asynchronous tasks etc.
 
 NPM package: `redux-logger`
+
+# ReactToolkit with JavaScript
