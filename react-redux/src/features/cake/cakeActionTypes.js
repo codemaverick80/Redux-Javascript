@@ -1,0 +1,2 @@
+export const INCREMENT_CAKE = "INCREMENT_CAKE";
+export const DECREMENT_CAKE = "DECREMENT_CAKE";
