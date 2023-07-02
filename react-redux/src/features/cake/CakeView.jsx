@@ -1,10 +1,9 @@
-import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import { incrementCake, decrementCake } from "./cakeActions";
 
 const CakeView = () => {
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.cakeReducer);
   const dispatch = useDispatch();
 
   return (
